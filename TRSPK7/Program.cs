@@ -63,7 +63,7 @@ Console.WriteLine($"Заменили все элементы главной ди
 MyMatrix mat = new MyMatrix(6, 6);
 for (int i = 0; i < 6; i++)
     for (int j = 0; j < 6; j++) mat.InitializationElement(i, j, r.Next(-9, 10));
-Console.WriteLine($"Изначальная матрица:\n{mat.ToString()}\n");
+Console.WriteLine($"\n\nИзначальная матрица:\n{mat.ToString()}");
 
 Console.WriteLine($"Сумма элементов главной диагонали: {mat.GetSumOfMainDiagonal()}\n");
 

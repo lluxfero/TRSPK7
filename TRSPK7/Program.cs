@@ -63,7 +63,7 @@ Console.WriteLine($"Заменили все элементы главной ди
 MyMatrix mat = new MyMatrix(6, 6);
 for (int i = 0; i < 6; i++)
     for (int j = 0; j < 6; j++) mat.InitializationElement(i, j, r.Next(-9, 10));
-Console.WriteLine($"Изначальный массив:\n{mat.ToString()}\n");
+Console.WriteLine($"Изначальная матрица:\n{mat.ToString()}\n");
 
 Console.WriteLine($"Сумма элементов главной диагонали: {mat.GetSumOfMainDiagonal()}\n");
 
@@ -211,7 +211,6 @@ class MyArray
             for (int j = 0; j < y; j++) arrnew[i, j] = arr[i + 1, j];
         arr = arrnew;
     }
-
     public void DeleteBeginElementColumn()
     {
         y--;
@@ -264,6 +263,7 @@ class MyArray
             }   
     }
 }
+
 
 class MyMatrix
 {
